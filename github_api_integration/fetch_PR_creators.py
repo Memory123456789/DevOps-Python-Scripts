@@ -25,6 +25,6 @@ if response.status_code == 200:
     # Display the dictionary of PR creators and their counts
     print("PR Creators and Counts:")
     for creator, count in pr_creators.items():       # to retrive both keys and values we use .items, otherwise "for"/"if" only checks the keys not values
-        print(f"{creator}: {count} Pull Requests")
+        print(f"{creator}: {count} PR(s)")
 else:
     print(f"Failed to fetch data. Status code: {response.status_code}") #response.status_code will give the codes like 200=OK, 404=Notfound, 503=service temporarily unavailable
