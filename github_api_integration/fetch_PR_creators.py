@@ -2,7 +2,8 @@
 import requests
 
 # Using GitHub RESTAPI Doc we can fetch pull request URL, then making a GET request to fetch pull requests data from the GitHub API and storing the response in a variable
-response = requests.get('https://api.github.com/repos/kubernetes/kubernetes/pulls')
+url = 'https://api.github.com/repos/kubernetes/kubernetes/pulls'
+response = requests.get(url)
 
 # checking if the response is successful
 if response.status_code == 200:
